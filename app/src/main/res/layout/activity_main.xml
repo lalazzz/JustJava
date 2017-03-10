@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.justjava.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#d0dba163" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/menuitem1"
+            android:id="@+id/CoffeeView"
+            />
+
+        <EditText
+            style="@style/ContentText"
+            android:hint="@string/yourName"
+            android:inputType="textCapWords"
+            android:textSize="24dp"
+            android:id="@+id/uName"
+            />
+
+        <TextView
+            style="@style/HeaderStyleText"
+            android:text="@string/toppings"
+            android:id="@+id/Topping_TextView"
+            android:fontFamily="casual"
+            />
+
+        <CheckBox
+            style="@style/ContentText"
+            android:text="@string/whippedCream"
+            android:id="@+id/WhippedCream"
+            android:paddingLeft="12dp"
+            />
+
+        <CheckBox
+            style="@style/ContentText"
+            android:text="@string/chocolateChip"
+            android:id="@+id/ChocolateChip"
+            android:paddingLeft="12dp"
+            />
+
+        <TextView
+            style="@style/HeaderStyleText"
+            android:text="@string/quantityHeader"
+            android:id="@+id/Quan_TextView"
+            android:fontFamily="casual"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp" >
+
+            <Button
+                style="@style/button1Style"
+                android:text="-"
+                android:onClick="minus"
+                android:id="@+id/minusbutton"
+                 />
+
+            <TextView
+                style="@style/ContentText"
+                android:text="@string/initial_quantity_value"
+                android:layout_marginRight="8dp"
+                android:id="@+id/Num_TextView"
+                android:textStyle="bold"
+                />
+
+            <Button
+                style="@style/button1Style"
+                android:text="+"
+                android:onClick="plus"
+                android:id="@+id/plusbutton"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/HeaderStyleText"
+            android:text="@string/orderSummaryHeader"
+            android:id="@+id/orderSummay_TextView"
+            android:fontFamily="casual"
+            />
+
+        <TextView
+            style="@style/ContentText"
+            android:text="@string/summaryText"
+            android:id="@+id/totalPrice_TextView"
+            android:textColor="@android:color/black"
+            />
+
+        <Button
+            style="@style/button2Style"
+            android:text="@string/orderButtonText"
+            android:onClick="submitOrder"
+            android:id="@+id/orderbutton"
+            android:layout_marginLeft="8dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

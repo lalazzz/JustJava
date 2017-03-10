@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Java</string>
+    <!-- Edit text used for name input with [CHAR LIMIT = NONE] -->
+    <string name="yourName">Your Name</string>
+    <!-- Header text used in layout for Toppings. [CHAR LIMIT = 20] -->
+    <string name="toppings">Toppings</string>
+    <!-- Checkbox text for Whipped Cream. [CHAR LIMIT = 20] -->
+    <string name="whippedCream">Whipped Cream</string>
+    <!-- Checkbox text for Chocolate. [CHAR LIMIT = 20] -->
+    <string name="chocolateChip">Chocolate Chip</string>
+    <!-- Header text used in layout for QuantityHeader. [CHAR LIMIT = 20] -->
+    <string name="quantityHeader">Quantity</string>
+    <!-- Quantity value is 1. [CHAR LIMIT = 20] -->
+    <string name="initial_quantity_value">1</string>
+    <!-- Header text used in layout for Order Summary. [CHAR LIMIT = 20] -->
+    <string name="orderSummaryHeader">Order Summary</string>
+    <!-- Text used in layout in summary text. [CHAR LIMIT = NONE] -->
+    <string name="summaryText" translatable="false">Click Order for list of items ordered to be send to your email.</string>
+    <!-- Button text used as Order. [CHAR LIMIT = NONE] -->
+    <string name="orderButtonText">order</string>
+
+    <!-- Main Activity Area -->
+    <!--     Whipped cream topping for the order summary. It will be shown in the format of
+     "Add whipped cream? true" or "Add whipped cream? false". [CHAR LIMIT=NONE]   -->
+    <string name="order_summary_whipped_cream">Add whipped cream? <xliff:g id="addWhippedCream" example="true">%b</xliff:g></string>
+    <!--      Chocolate topping for the order summary. It will be shown in the format of
+      "Add chocolate? true" or "Add chocolate? false". [CHAR LIMIT=NONE]    -->
+    <string name="order_summary_chocolate">"Add chocolate chip? <xliff:g id="addChocolate" example="true">%b</xliff:g></string>
+    <!--      Quantity of coffee cups for the order summary. It will be shown in the format of
+      "Quantity: 2", where 2 is the number of cups ordered. [CHAR LIMIT=NONE]    -->
+    <string name="order_summary_quantity">Quantity: <xliff:g id="quantity" example="1">%d</xliff:g></string>
+    <!--      Total price for the order summary. It will be shown in the format of
+      "Total: $10" where $10 is the price. [CHAR LIMIT=NONE]    -->
+    <string name="order_summary_price">Total: <xliff:g id="price" example="$10">%s</xliff:g></string>
+    <!--      Subject line for the order summary email. It will be in the format of
+      "Just Java order for Amy" where Amy is the user's name. [CHAR LIMIT=NONE]    -->
+    <string name="order_summary_email_subject">Just Java order for <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+    <!-- Text with Thank You. [CHAR LIMIT = NONE] -->
+    <string name="thankYou">Thank You!</string>
+    <!-- Text with for the Name of the order summary. It will be shown in the format of Name:Amy where amy is the user of the apps [CHAR LIMIT = NONE] -->
+    <string name="summaryName">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+
+</resources>
